@@ -1,0 +1,36 @@
+.board{
+            display:block;
+            /*position:relative;*/
+            margin:10px 0px 10px 0px;
+            border:1px solid #ccc;
+            width:56%;
+            height:460px;
+            padding:5px;
+        }
+.board span{
+            font-family: arial;
+            letter-spacing: -1px;
+            display:block;
+            width:23%;
+            height:105px;
+            /*position:absolute;*/
+            text-align:center;
+            color:white;
+            font-weight:bold;
+            font-size:20px;
+            padding-top:14px;
+            background-color:#ebe76f;
+            border-radius: 5px;
+            transition: all 100ms linear;
+        }
+        span.value0{ background-color: #ebeb28; float: left;margin: 3px 3px 3px 3px}
+        span.value2{ background-color: #58eb74; float: left;margin: 3px 3px 3px 3px}
+        span.value4{ background-color:#ea6feb; float: left;margin: 3px 3px 3px 3px}
+        span.value8{ background-color:#eb6fa3; float: left;margin: 3px 3px 3px 3px}
+        span.value16{ background-color:#7a6feb; float: left;margin: 3px 3px 3px 3px}
+        span.value32{ background-color:#af6feb; float: left;margin: 3px 3px 3px 3px}
+        span.value64{ background-color:#6febcf; float: left;margin: 3px 3px 3px 3px}
+        span.value128{ background-color:#6fbeeb; float: left;margin: 3px 3px 3px 3px}
+        span.value256{ background-color:#afeb6f; float: left;margin: 3px 3px 3px 3px}
+        span.value512{ background-color:#7aeb6f; float: left;margin: 3px 3px 3px 3px}
+        span.value1024{ background-color:#e4eb6f; float: left;margin: 3px 3px 3px 3px}

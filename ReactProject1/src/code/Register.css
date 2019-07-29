@@ -1,0 +1,25 @@
+
+.timg1{
+    width: 100%;
+    height: 50%;
+}
+.registerForm{
+    position: absolute;
+    top: 5%;
+    right: 30%;
+    width: 50%;
+    float: right;
+}
+.title{
+    margin-left: 50%;
+    color: white;
+}
+.agreement{
+    color: white;
+}
+.ant-form-item-label > label{
+    color: black;
+}
+.ant-form-extra{
+    color: white;
+}

@@ -1,0 +1,12 @@
+.demo-loadmore-list {
+  min-height: 350px;
+}
+.alllist{
+  margin-right: 130px;
+}
+.search_box{
+  width: 300px;
+  position: absolute;
+  right: 10%;
+  top: 3%;
+}

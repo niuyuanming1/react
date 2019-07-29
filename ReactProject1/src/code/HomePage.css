@@ -1,0 +1,54 @@
+#components-layout-demo-custom-trigger .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+    color: #1890ff;
+}
+
+.logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+    color: white;
+}
+
+.name {
+    position: relative;
+    float: right;
+    font-size: 18px;
+    margin-right: 10%;
+}
+
+.layout {
+    height: 600px;
+}
+
+.headPortrait {
+    width: 100px;
+    height: 60px;
+}
+
+.ant-layout {
+    height: 100%;
+}
+
+.headerContent {
+    float: right;
+}
+.icon{
+    float: right;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+    color: #1890ff;
+}
+.headeremil{
+    float: right;
+    font-size: 15px;
+    margin-right: 30px;
+}
