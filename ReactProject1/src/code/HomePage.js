@@ -142,7 +142,14 @@ class HomePage extends Component {
                             onClick={this.toggle}
                         />
                         <div className="headerContent">
-                            <a><Icon type="download" className="icon"/></a>
+                            <a href="https://codeload.github.com/niuyuanming1/react/zip/master">
+                                <Icon type="download" className="icon"/>
+                            </a>
+                            <p className="icon1">项目源码(前端)</p>
+                            <a href="https://codeload.github.com/niuyuanming1/DjangoProject/zip/master">
+                                <Icon type="download" className="icon"/>
+                            </a>
+                            <p className="icon1">项目源码(后端)</p>
                         </div>
                     </Header>
                     <Content
