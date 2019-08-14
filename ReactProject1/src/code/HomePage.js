@@ -164,7 +164,7 @@ class HomePage extends Component {
                             this.state.key == 1 ?
                                 <Content1/>: this.state.key == 2 ?
                                 <Content2/> :this.state.key == 3 ?
-                                <Content3/> : this.state.key == 4 ?
+                                <Content3 nowaday_user={content}/> : this.state.key == 4 ?
                                 <Content4/> :<Content5/>
                         }
 

@@ -3,8 +3,11 @@ import {List, Avatar, Button, Skeleton, message,Input} from 'antd';
 import './Content3.css';
 import * as constant from "../constants";
 import {UserForm} from "./UserForm";
+import {DialogBoxForm} from "./DialogBoxForm";
 const { Search } = Input;
 
+
+var chatReturnDate=[]
 
 class Content3 extends Component {
     state = {
@@ -13,7 +16,11 @@ class Content3 extends Component {
         list: [1,2,3,4,5],
         alllist:[1,2,3],
         visible:false,
-        updateuser:{}
+        dialogBoxVisible:false,
+        updateuser:{},
+        chatReturnDate:chatReturnDate,
+        socket_user:{},
+        nowaday_user:this.props.nowaday_user
     };
     //获取所有用户
     componentDidMount() {
@@ -139,6 +146,49 @@ class Content3 extends Component {
         })
 
     }
+    socket =(item)=>{
+        this.setState({
+            socket_user:item,
+            dialogBoxVisible:!this.state.dialogBoxVisible,
+        })
+        fetch(`${constant.server}/socket/`, constant.POSTHeader(item))
+            .then(response => {
+                return response.json();
+            }).then(json => {
+            if (json.status == 200) {
+                message.success("服务端启动成功")
+                message.success("客户端启动成功")
+            } else {
+                message.success("创建socket失败");
+            }
+        }).catch(err => {
+            console.log(err)
+        });
+    }
+    DialogBoxFormCancel=()=>{
+        this.setState({
+            dialogBoxVisible:false
+        })
+    }
+    DialogBoxFormCreate=()=>{
+        const form = this.formRef;
+        form.validateFields((err, values) => {
+            let body = Object.assign({},values,{user:this.state.nowaday_user});
+            fetch(`${constant.server}/chat/`, constant.POSTHeader(body))
+                .then(response => {
+                    return response.json();
+                }).then(json => {
+                if (json.status == 200) {
+
+
+                } else {
+                    message.success("聊天内容发送失败！");
+                }
+            }).catch(err => {
+                console.log(err)
+            });
+        })
+    }
     render() {
         const {initLoading, loading, list} = this.state;
         const loadMore =
@@ -174,7 +224,12 @@ class Content3 extends Component {
                             <Skeleton avatar title={false} loading={item.loading} active>
                                 <List.Item.Meta
                                     avatar={
-                                        <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"/>
+                                        <a onClick={() => {
+                                            this.socket(item)
+                                        }}>
+                                            <Avatar
+                                                src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"/>
+                                        </a>
                                     }
                                     title={<a href="https://ant.design">{item.id}</a>}
                                     description="用户id"
@@ -199,6 +254,14 @@ class Content3 extends Component {
                         }
                         enterButton
                 />
+                <DialogBoxForm
+                    visible={this.state.dialogBoxVisible}
+                    content={chatReturnDate}
+                    socket_user={this.state.socket_user}
+                    nowaday_user={this.props.nowaday_user}
+                    ref={this.saveFormRef}
+                    onCancel={this.DialogBoxFormCancel}
+                    onCreate={this.DialogBoxFormCreate}/>
             </div>
         )
     }
