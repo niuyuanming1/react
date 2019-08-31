@@ -1,3 +1,4 @@
+//前端图片
 import React, {Component} from "react";
 
 class FrontEndPicture extends Component{

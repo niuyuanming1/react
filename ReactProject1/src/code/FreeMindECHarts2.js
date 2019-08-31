@@ -1,3 +1,5 @@
+//未实现的ECHarts图
+
 import React, {Component} from 'react';
 // 引入 ECharts 主模块
 import echarts from 'echarts/lib/echarts';

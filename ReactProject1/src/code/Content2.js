@@ -1,3 +1,4 @@
+//2048游戏
 import React, {Component} from "react";
 import ColumnarECharts from './ColumnarECharts'
 import PieEcharts from './PieEcharts';
@@ -27,16 +28,6 @@ class Content2 extends Component{
                 <div style={{display:this.state.block}}>
                     <Tiles/>
                 </div>
-                <div className="columnarecharts">
-                    <ColumnarECharts/>
-                </div>
-                <div className="pieecharts">
-                    <PieEcharts/>
-                </div>
-                <div className="freemindcharts">
-                    <FreeMindECharts/>
-                </div>
-
             </div>
         )
     }

@@ -1,3 +1,4 @@
+//后端图片
 import React, {Component} from "react";
 
 class AfterEndPicture extends Component{

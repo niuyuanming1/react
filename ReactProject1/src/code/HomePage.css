@@ -40,6 +40,11 @@
 .headerContent {
     float: right;
 }
+.yun_dish {
+    float: right;
+    margin-right: 40%;
+    cursor:pointer;
+}
 .icon{
     float: right;
     font-size: 30px;
@@ -52,6 +57,12 @@
     font-size: 20px;
     margin-right: 10px;
     color: #0c0e0c;
+}
+.icon3{
+    float: right;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
 }
 .headeremil{
     float: right;

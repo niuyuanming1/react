@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="072a0045-4798-4b61-9a0d-ff33ac9f18e3" name="Default Changelist" comment="" />
+    <list default="true" id="072a0045-4798-4b61-9a0d-ff33ac9f18e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/code/ColumnarECharts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/InputForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/YunDish.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/YunDish.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/AfterEndPicture.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/AfterEndPicture.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/ColumnarECharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ColumnarECharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/Content2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Content2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/Content2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Content2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/FreeMindECHarts2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/FreeMindECHarts2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/FreeMindECharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/FreeMindECharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/FrontEndPicture.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/FrontEndPicture.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/HomePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/PieEcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/PieEcharts.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,24 +26,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="demo" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>reqwest</find>
-      <find>name</find>
-      <find>layout</find>
-      <find>toggle</find>
-      <find>change_key</find>
-      <find>showUser</find>
-      <find>handleCancel</find>
-      <find>onLoadMore</find>
-      <find>handleClick</find>
-      <find>handleSubmit</find>
-      <find>handleConfirmBlur</find>
-      <find>compareToFirstPassword</find>
-      <find>picture</find>
-      <find>nowaday_user</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -40,10 +38,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -51,14 +52,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\demo\src" />
-      <recent name="D:\demo\" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\react\ReactProject1\src\image" />
       <recent name="D:\ReactProject\src\image" />
       <recent name="D:\demo\src\image" />
       <recent name="D:\demo\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\demo\src" />
+      <recent name="D:\demo\" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -170,6 +172,14 @@
       <workItem from="1565181107686" duration="18000" />
       <workItem from="1565182141300" duration="94000" />
       <workItem from="1565787953901" duration="570000" />
+      <workItem from="1566955606469" duration="8291000" />
+      <workItem from="1567000612761" duration="5157000" />
+      <workItem from="1567039444494" duration="2123000" />
+      <workItem from="1567052074699" duration="3294000" />
+      <workItem from="1567083471035" duration="1292000" />
+      <workItem from="1567160846244" duration="8675000" />
+      <workItem from="1567174391610" duration="4276000" />
+      <workItem from="1567217497966" duration="5390000" />
     </task>
     <servers />
   </component>

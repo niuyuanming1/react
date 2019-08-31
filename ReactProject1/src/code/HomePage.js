@@ -1,3 +1,4 @@
+//首页
 import React, {Component} from "react";
 import {Layout, Menu, Icon, message} from 'antd';
 import './HomePage.css';
@@ -6,10 +7,15 @@ import Content2 from './Content2';
 import Content3 from './Content3';
 import Content4 from './Content4';
 import Content5 from './Content5';
+import YunDish from './YunDish';
 import * as constant from "../constants";
 import {UserForm} from './UserForm';
+import ColumnarECharts from './ColumnarECharts'
+import PieEcharts from './PieEcharts';
+import FreeMindECharts from './FreeMindECharts'
 const {Header, Sider, Content} = Layout;
 
+const { SubMenu } = Menu;
 
 class HomePage extends Component {
     state = {
@@ -93,6 +99,11 @@ class HomePage extends Component {
             visible:false
         })
     }
+    yun_dish=(e)=>{
+        this.setState({
+            key:99
+        })
+    }
     render() {
         const content ={"id":this.state.active_user_id,"email":this.state.active_user_email,
                           "userName":this.state.active_user_username,"phoneNumber":this.state.active_user_phonenumber,
@@ -116,10 +127,21 @@ class HomePage extends Component {
                             <Icon type="github" />
                             <span>技术展示</span>
                         </Menu.Item>
-                        <Menu.Item key="2" onClick={this.change_key}>
-                            <Icon type="aliyun" />
-                            <span>数据分析</span>
-                        </Menu.Item>
+                        <SubMenu
+                            key="2"
+                            title={
+                                <span>
+                                    <Icon type="aliyun" />
+                                    <span>数据分析</span>
+                                </span>
+                                 }
+                            onClick={this.change_key}
+                        >
+                            <Menu.Item key="9" onClick={this.change_key}>饼状图</Menu.Item>
+                            <Menu.Item key="10" onClick={this.change_key}>柱状图</Menu.Item>
+                            <Menu.Item key="11" onClick={this.change_key}>树状图</Menu.Item>
+                            <Menu.Item key="12" onClick={this.change_key}>2048 game</Menu.Item>
+                        </SubMenu>
                         <Menu.Item key="3" onClick={this.change_key}>
                             <Icon type="database" />
                             <span>用户管理</span>
@@ -132,6 +154,7 @@ class HomePage extends Component {
                             <Icon type="android" />
                             <span>人工智能</span>
                         </Menu.Item>
+
                     </Menu>
                 </Sider>
                 <Layout>
@@ -151,6 +174,10 @@ class HomePage extends Component {
                             </a>
                             <p className="icon1">项目源码(后端)</p>
                         </div>
+                        <div className="yun_dish" onClick={this.yun_dish}>
+                            <Icon type="aliyun" className="icon3"/>
+                            <p className="icon1">我的网盘</p>
+                        </div>
                     </Header>
                     <Content
                         style={{
@@ -162,10 +189,14 @@ class HomePage extends Component {
                     >
                         {
                             this.state.key == 1 ?
-                                <Content1/>: this.state.key == 2 ?
-                                <Content2/> :this.state.key == 3 ?
+                                <Content1/>: this.state.key == 9 ?
+                                <PieEcharts/>:this.state.key == 11?
+                                <FreeMindECharts/>:this.state.key == 10?
+                                <ColumnarECharts/> :this.state.key ==12 ?
+                                <Content2/>:this.state.key == 3 ?
                                 <Content3 nowaday_user={content}/> : this.state.key == 4 ?
-                                <Content4/> :<Content5/>
+                                <Content4/> :this.state.key == 99 ?
+                                <YunDish nowaday_user={content}/>:<Content5/>
                         }
 
                     </Content>
