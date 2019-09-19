@@ -11,6 +11,7 @@ import YunDish from './YunDish';
 import * as constant from "../constants";
 import {UserForm} from './UserForm';
 import ColumnarECharts from './ColumnarECharts'
+import KECharts from './KECharts'
 import PieEcharts from './PieEcharts';
 import FreeMindECharts from './FreeMindECharts'
 const {Header, Sider, Content} = Layout;
@@ -67,7 +68,7 @@ class HomePage extends Component {
             visible:true
         })
     }
-     saveFormRef = (form) => {
+    saveFormRef = (form) => {
         this.formRef = form;
     }
     //取消显示用户信息
@@ -140,6 +141,7 @@ class HomePage extends Component {
                             <Menu.Item key="9" onClick={this.change_key}>饼状图</Menu.Item>
                             <Menu.Item key="10" onClick={this.change_key}>柱状图</Menu.Item>
                             <Menu.Item key="11" onClick={this.change_key}>树状图</Menu.Item>
+                            <Menu.Item key="13" onClick={this.change_key}>K线图</Menu.Item>
                             <Menu.Item key="12" onClick={this.change_key}>2048 game</Menu.Item>
                         </SubMenu>
                         <Menu.Item key="3" onClick={this.change_key}>
@@ -193,7 +195,8 @@ class HomePage extends Component {
                                 <PieEcharts/>:this.state.key == 11?
                                 <FreeMindECharts/>:this.state.key == 10?
                                 <ColumnarECharts/> :this.state.key ==12 ?
-                                <Content2/>:this.state.key == 3 ?
+                                            <Content2/>:this.state.key==13?
+                                                <KECharts/>:this.state.key == 3 ?
                                 <Content3 nowaday_user={content}/> : this.state.key == 4 ?
                                 <Content4/> :this.state.key == 99 ?
                                 <YunDish nowaday_user={content}/>:<Content5/>

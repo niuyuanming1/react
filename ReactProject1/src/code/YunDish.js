@@ -3,7 +3,12 @@ import * as constant from "../constants";
 import {Avatar, List, message, Skeleton,Anchor,Row,Col,Button} from "antd";
 import "./YunDish.css";
 import {InputForm} from "./InputForm";
+import { confirmAlert } from "react-confirm-alert";
+import 'react-confirm-alert/src/react-confirm-alert.css';
+import {Modal} from "antd/lib/index";
 //import {CopyToClipboard} from 'react-copy-to-clipboard';
+
+
 
 class YunDish extends Component{
     state = {
@@ -30,21 +35,37 @@ class YunDish extends Component{
             console.log(err)
         });
     }
-    delect=(item)=>{
-        fetch(`${constant.server}/yundelete/`, constant.POSTHeader(item))
-            .then(response => {
-                return response.json();
-            }).then(json => {
-            if (json.status == 200) {
-                let list = this.state.list.filter(i => i.id !== item.id)
-                this.setState({
-                    list : list
-                })
-            } else {
-                message.success("删除失败！");
-            }
-        }).catch(err => {
-            console.log(err)
+    delect = (item) => {
+        confirmAlert({
+            title: '确定删除吗？',
+            message: '你确定这么做吗。',
+            buttons: [
+                {
+                    label: 'Yes',
+                    onClick: () => {
+                        fetch(`${constant.server}/yundelete/`, constant.POSTHeader(item))
+                            .then(response => {
+                                return response.json();
+                            }).then(json => {
+                            if (json.status == 200) {
+                                let list = this.state.list.filter(i => i.id !== item.id)
+                                this.setState({
+                                    list: list
+                                })
+                                message.success("删除成功");
+                            } else {
+                                message.success("删除失败！");
+                            }
+                        }).catch(err => {
+                            console.log(err)
+                        });
+                    }
+                },
+                {
+                    label: 'No',
+                    onClick: () => {}
+                }
+            ]
         });
     }
     input_button=()=>{
@@ -99,8 +120,11 @@ class YunDish extends Component{
             visible: false
         })
     }
+    share=(item)=>{
+        message.warning('此功能尚未实现');
+    }
     copy=(item)=>{
-
+        message.warning('此功能尚未实现');
     }
     render() {
         return (
@@ -126,7 +150,7 @@ class YunDish extends Component{
                     dataSource={this.state.list}
                     renderItem={item => (
                         <List.Item actions={[
-                            <a>分享</a>,
+                            <a onClick={() => {this.share(item)}}>分享</a>,
                             <a href={item.url}>下载</a>,
                             <a onClick={() => {this.delect(item)}}>删除</a>,
                             <a onClick={() => {this.copy(item)}}>复制连接</a>

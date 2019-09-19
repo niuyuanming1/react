@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="072a0045-4798-4b61-9a0d-ff33ac9f18e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/code/ColumnarECharts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/InputForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/YunDish.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/YunDish.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/EmailForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/KECharts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/KECharts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/AfterEndPicture.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/AfterEndPicture.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/ColumnarECharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ColumnarECharts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Content2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Content2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Content2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Content2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/FreeMindECHarts2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/FreeMindECHarts2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/FreeMindECharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/FreeMindECharts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/FrontEndPicture.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/FrontEndPicture.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/HomePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/Content3.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Content3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/Content3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Content3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/PieEcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/PieEcharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/YunDish.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/YunDish.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +174,22 @@
       <workItem from="1567083471035" duration="1292000" />
       <workItem from="1567160846244" duration="8675000" />
       <workItem from="1567174391610" duration="4276000" />
-      <workItem from="1567217497966" duration="5390000" />
+      <workItem from="1567217497966" duration="11159000" />
+      <workItem from="1567429042546" duration="606000" />
+      <workItem from="1567436034785" duration="1527000" />
+      <workItem from="1567470175817" duration="1592000" />
+      <workItem from="1567514394446" duration="877000" />
+      <workItem from="1567591411815" duration="441000" />
+      <workItem from="1567696729203" duration="57000" />
+      <workItem from="1568601753837" duration="75000" />
+      <workItem from="1568636951454" duration="1634000" />
+      <workItem from="1568711449463" duration="689000" />
+      <workItem from="1568717524046" duration="607000" />
+      <workItem from="1568722242502" duration="971000" />
+      <workItem from="1568772789479" duration="6336000" />
+      <workItem from="1568804275086" duration="8389000" />
+      <workItem from="1568815483707" duration="5766000" />
+      <workItem from="1568854002680" duration="772000" />
     </task>
     <servers />
   </component>
